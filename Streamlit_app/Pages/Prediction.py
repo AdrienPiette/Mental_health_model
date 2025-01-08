@@ -15,13 +15,13 @@ st.markdown("""
 
 # Load the pre-trained model, scaler, and training columns
 try:
-    with open(r'C:\Users\pieta\OneDrive\Bureau\Mental Health Model\Mental_health_model\Model_training\rf_model.pkl', 'rb') as f:
+    with open(r'C:\Users\pieta\OneDrive\Bureau\Becode\bootcamp\Repositories\Mental Health Model\Mental_health_model\Model_training\rf_model.pkl', 'rb') as f:
         model = pickle.load(f)
 
-    with open(r'C:\Users\pieta\OneDrive\Bureau\Mental Health Model\Mental_health_model\Model_training\scaler.pkl', 'rb') as f:
+    with open(r'C:\Users\pieta\OneDrive\Bureau\Becode\bootcamp\Repositories\Mental Health Model\Mental_health_model\Model_training\scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
 
-    with open(r'C:\Users\pieta\OneDrive\Bureau\Mental Health Model\Mental_health_model\Model_training\training_columns.pkl', 'rb') as f:
+    with open(r'C:\Users\pieta\OneDrive\Bureau\Becode\bootcamp\Repositories\Mental Health Model\Mental_health_model\Model_training\training_columns.pkl', 'rb') as f:
         training_columns = pickle.load(f)
 except Exception as e:
     st.error("Failed to load model or preprocessing files. Please check the file paths.")
@@ -38,6 +38,8 @@ gender = st.selectbox("Gender", ["Male", "Female", "Other"], help="Select your g
 
 # Job Role input
 job_role = st.selectbox("Job Role", ['HR', 'Data Scientist', 'Software Engineer', 'Sales', 'Marketing', 'Designer','Project Manager'], help="Select your current job role.")
+
+
 
 # Industry input
 industry = st.selectbox("Industry", ["Technology", "Healthcare", "Finance", "Education"], help="Select the industry you work in.")

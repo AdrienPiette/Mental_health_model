@@ -4,7 +4,7 @@ import plotly.express as px
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-data = pd.read_csv(r'C:\Users\pieta\OneDrive\Bureau\Mental Health Model\Mental_health_model\Data\data_clean_pre_encode.csv')
+data = pd.read_csv(r'C:\Users\pieta\OneDrive\Bureau\Becode\bootcamp\Repositories\Mental Health Model\Mental_health_model\Data\data_clean_pre_encode.csv')
 
 # Set up Streamlit page
 st.set_page_config(page_title="Mental Health Dashboard", layout="wide")
