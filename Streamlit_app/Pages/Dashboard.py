@@ -149,3 +149,13 @@ fig8.update_layout(
     title_x=0.5
 )
 st.plotly_chart(fig8, use_container_width=True)
+
+st.write("""Correlation Legend
+
+This legend helps you understand the relationship between variables in the visualizations. The correlation coefficient indicates how strongly two variables are related:
+
+    Positive Correlation (0 to +1): As one variable increases, the other tends to increase as well.
+    Negative Correlation (0 to -1): As one variable increases, the other tends to decrease.
+    No Correlation (around 0): There is no clear linear relationship between the two variables.
+
+The closer the correlation coefficient is to 1 or -1, the stronger the relationship.""")
